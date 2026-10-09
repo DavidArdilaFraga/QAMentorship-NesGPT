@@ -1,0 +1,14 @@
+# Playwright
+node_modules/
+test-results/
+playwright-report/
+.features-gen/
+
+# Auth session state (contains access tokens - never commit)
+playwright/.auth/
+
+# Cucumber reports
+cucumber-report/
+
+# Screenshots
+screenshots/

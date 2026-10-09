@@ -1,0 +1,140 @@
+2026-09-30T07:38:13.582Z [User renames a chat in the Chat History] START
+2026-09-30T07:38:13.593Z [User renames a chat in the Chat History] closing modal
+2026-09-30T07:38:14.108Z [User renames a chat in the Chat History] opening panel
+2026-09-30T07:38:15.619Z [User renames a chat in the Chat History] panel open, deleting test chats
+2026-09-30T07:38:15.771Z [User renames a chat in the Chat History] ERROR: Error: page.evaluate: SyntaxError: Failed to execute 'json' on 'Response': Unexpected end of JSON input
+2026-09-30T07:38:24.706Z [User pins a chat in the Chat History] START
+2026-09-30T07:38:24.708Z [User pins a chat in the Chat History] opening panel
+2026-09-30T07:38:25.689Z [User pins a chat in the Chat History] panel open, deleting test chats
+2026-09-30T07:38:25.837Z [User pins a chat in the Chat History] ERROR: Error: page.evaluate: SyntaxError: Failed to execute 'json' on 'Response': Unexpected end of JSON input
+2026-09-30T07:38:33.943Z [User unpins a pinned chat in the Chat History] START
+2026-09-30T07:38:33.946Z [User unpins a pinned chat in the Chat History] opening panel
+2026-09-30T07:38:35.458Z [User unpins a pinned chat in the Chat History] panel open, deleting test chats
+2026-09-30T07:38:35.569Z [User unpins a pinned chat in the Chat History] ERROR: Error: page.evaluate: SyntaxError: Failed to execute 'json' on 'Response': Unexpected end of JSON input
+2026-09-30T07:38:54.986Z [User filters the Chat History by date range] START
+2026-09-30T07:38:54.989Z [User filters the Chat History by date range] closing modal
+2026-09-30T07:38:55.520Z [User filters the Chat History by date range] opening panel
+2026-09-30T07:38:57.032Z [User filters the Chat History by date range] panel open, deleting test chats
+2026-09-30T07:38:57.155Z [User filters the Chat History by date range] ERROR: Error: page.evaluate: SyntaxError: Failed to execute 'json' on 'Response': Unexpected end of JSON input
+2026-09-30T07:39:07.545Z [User selects multiple chats in the Chat History] START
+2026-09-30T07:39:07.550Z [User selects multiple chats in the Chat History] opening panel
+2026-09-30T07:39:08.092Z [User selects multiple chats in the Chat History] panel open, deleting test chats
+2026-09-30T07:39:08.227Z [User selects multiple chats in the Chat History] ERROR: Error: page.evaluate: SyntaxError: Unexpected end of JSON input
+2026-09-30T08:38:07.376Z [User renames a chat in the Chat History] START
+2026-09-30T08:38:07.383Z [User renames a chat in the Chat History] closing modal
+2026-09-30T08:38:07.900Z [User renames a chat in the Chat History] opening panel
+2026-09-30T08:38:09.409Z [User renames a chat in the Chat History] panel open, deleting test chats
+2026-09-30T08:38:09.551Z [User renames a chat in the Chat History] ERROR: Error: page.evaluate: SyntaxError: Failed to execute 'json' on 'Response': Unexpected end of JSON input
+2026-09-30T08:38:22.373Z [User pins a chat in the Chat History] START
+2026-09-30T08:38:22.375Z [User pins a chat in the Chat History] opening panel
+2026-09-30T08:38:23.885Z [User pins a chat in the Chat History] panel open, deleting test chats
+2026-09-30T08:38:24.033Z [User pins a chat in the Chat History] ERROR: Error: page.evaluate: SyntaxError: Failed to execute 'json' on 'Response': Unexpected end of JSON input
+2026-09-30T08:38:33.575Z [User unpins a pinned chat in the Chat History] START
+2026-09-30T08:38:33.578Z [User unpins a pinned chat in the Chat History] opening panel
+2026-09-30T08:38:35.084Z [User unpins a pinned chat in the Chat History] panel open, deleting test chats
+2026-09-30T08:38:35.232Z [User unpins a pinned chat in the Chat History] ERROR: Error: page.evaluate: SyntaxError: Failed to execute 'json' on 'Response': Unexpected end of JSON input
+2026-09-30T08:38:56.551Z [User filters the Chat History by date range] START
+2026-09-30T08:38:56.554Z [User filters the Chat History by date range] closing modal
+2026-09-30T08:38:57.087Z [User filters the Chat History by date range] opening panel
+2026-09-30T08:38:58.597Z [User filters the Chat History by date range] panel open, deleting test chats
+2026-09-30T08:38:58.741Z [User filters the Chat History by date range] ERROR: Error: page.evaluate: SyntaxError: Failed to execute 'json' on 'Response': Unexpected end of JSON input
+2026-09-30T08:39:08.793Z [User selects multiple chats in the Chat History] START
+2026-09-30T08:39:08.797Z [User selects multiple chats in the Chat History] opening panel
+2026-09-30T08:39:10.304Z [User selects multiple chats in the Chat History] panel open, deleting test chats
+2026-09-30T08:39:10.462Z [User selects multiple chats in the Chat History] ERROR: Error: page.evaluate: SyntaxError: Failed to execute 'json' on 'Response': Unexpected end of JSON input
+2026-09-30T08:49:09.076Z [User renames a chat in the Chat History] START
+2026-09-30T08:49:09.088Z [User renames a chat in the Chat History] closing modal
+2026-09-30T08:49:09.613Z [User renames a chat in the Chat History] opening panel
+2026-09-30T08:49:11.133Z [User renames a chat in the Chat History] panel open, deleting test chats
+2026-09-30T08:49:11.274Z [User renames a chat in the Chat History] ERROR: Error: page.evaluate: SyntaxError: Unexpected end of JSON input
+2026-09-30T08:49:20.178Z [User pins a chat in the Chat History] START
+2026-09-30T08:49:20.182Z [User pins a chat in the Chat History] opening panel
+2026-09-30T08:49:21.684Z [User pins a chat in the Chat History] panel open, deleting test chats
+2026-09-30T08:49:21.884Z [User pins a chat in the Chat History] ERROR: Error: page.evaluate: SyntaxError: Failed to execute 'json' on 'Response': Unexpected end of JSON input
+2026-09-30T08:49:35.031Z [User unpins a pinned chat in the Chat History] START
+2026-09-30T08:49:35.034Z [User unpins a pinned chat in the Chat History] opening panel
+2026-09-30T08:49:35.252Z [User unpins a pinned chat in the Chat History] panel open, deleting test chats
+2026-09-30T08:49:35.426Z [User unpins a pinned chat in the Chat History] ERROR: Error: page.evaluate: SyntaxError: Unexpected end of JSON input
+2026-09-30T08:49:55.708Z [User filters the Chat History by date range] START
+2026-09-30T08:49:55.712Z [User filters the Chat History by date range] closing modal
+2026-09-30T08:49:56.234Z [User filters the Chat History by date range] opening panel
+2026-09-30T08:49:57.747Z [User filters the Chat History by date range] panel open, deleting test chats
+2026-09-30T08:49:57.902Z [User filters the Chat History by date range] ERROR: Error: page.evaluate: SyntaxError: Failed to execute 'json' on 'Response': Unexpected end of JSON input
+2026-09-30T08:50:06.312Z [User selects multiple chats in the Chat History] START
+2026-09-30T08:50:06.315Z [User selects multiple chats in the Chat History] opening panel
+2026-09-30T08:50:07.819Z [User selects multiple chats in the Chat History] panel open, deleting test chats
+2026-09-30T08:50:07.990Z [User selects multiple chats in the Chat History] ERROR: Error: page.evaluate: SyntaxError: Unexpected end of JSON input
+2026-10-08T08:09:34.079Z [User deletes a chat using the multi-select mode] START
+2026-10-08T08:09:34.130Z [User deletes a chat using the multi-select mode] opening panel
+2026-10-08T08:09:34.938Z [User filters the Chat History by date range] START
+2026-10-08T08:09:35.075Z [User filters the Chat History by date range] closing modal
+2026-10-08T08:09:35.333Z [User deletes a chat using the multi-select mode] panel open, deleting test chats
+2026-10-08T08:09:35.651Z [User deletes a chat using the multi-select mode] ERROR: Error: page.evaluate: SyntaxError: Failed to execute 'json' on 'Response': Unexpected end of JSON input
+2026-10-08T08:09:35.812Z [User filters the Chat History by date range] opening panel
+2026-10-08T08:09:35.975Z [User filters the Chat History by date range] panel open, deleting test chats
+2026-10-08T08:09:36.224Z [User filters the Chat History by date range] ERROR: Error: page.evaluate: SyntaxError: Failed to execute 'json' on 'Response': Unexpected end of JSON input
+2026-10-08T08:09:44.098Z [User selects multiple chats in the Chat History] START
+2026-10-08T08:09:44.101Z [User selects multiple chats in the Chat History] SKIP: no testChatTitle
+2026-10-08T08:15:06.540Z [User selects multiple chats in the Chat History] START
+2026-10-08T08:15:06.839Z [User selects multiple chats in the Chat History] opening panel
+2026-10-08T08:15:08.589Z [User selects multiple chats in the Chat History] panel open, deleting test chats
+2026-10-08T08:15:08.998Z [User selects multiple chats in the Chat History] ERROR: Error: page.evaluate: SyntaxError: Failed to execute 'json' on 'Response': Unexpected end of JSON input
+2026-10-08T08:15:12.352Z [User filters the Chat History by date range] START
+2026-10-08T08:15:12.434Z [User filters the Chat History by date range] closing modal
+2026-10-08T08:15:13.191Z [User filters the Chat History by date range] opening panel
+2026-10-08T08:15:14.776Z [User filters the Chat History by date range] panel open, deleting test chats
+2026-10-08T08:15:15.256Z [User filters the Chat History by date range] ERROR: Error: page.evaluate: SyntaxError: Failed to execute 'json' on 'Response': Unexpected end of JSON input
+2026-10-08T08:15:25.963Z [User deletes a chat using the multi-select mode] START
+2026-10-08T08:15:25.973Z [User deletes a chat using the multi-select mode] SKIP: no testChatTitle
+2026-10-08T08:17:28.053Z [User selects multiple chats in the Chat History] START
+2026-10-08T08:17:28.131Z [User selects multiple chats in the Chat History] opening panel
+2026-10-08T08:17:29.788Z [User selects multiple chats in the Chat History] panel open, deleting test chats
+2026-10-08T08:17:30.225Z [User selects multiple chats in the Chat History] ERROR: Error: page.evaluate: SyntaxError: Failed to execute 'json' on 'Response': Unexpected end of JSON input
+2026-10-08T08:17:33.258Z [User filters the Chat History by date range] START
+2026-10-08T08:17:33.287Z [User filters the Chat History by date range] closing modal
+2026-10-08T08:17:33.423Z [User deletes a chat using the multi-select mode] START
+2026-10-08T08:17:33.495Z [User deletes a chat using the multi-select mode] opening panel
+2026-10-08T08:17:33.998Z [User filters the Chat History by date range] opening panel
+2026-10-08T08:17:34.788Z [User deletes a chat using the multi-select mode] panel open, deleting test chats
+2026-10-08T08:17:35.103Z [User deletes a chat using the multi-select mode] ERROR: Error: page.evaluate: SyntaxError: Failed to execute 'json' on 'Response': Unexpected end of JSON input
+2026-10-08T08:17:35.611Z [User filters the Chat History by date range] panel open, deleting test chats
+2026-10-08T08:17:35.897Z [User filters the Chat History by date range] ERROR: Error: page.evaluate: SyntaxError: Failed to execute 'json' on 'Response': Unexpected end of JSON input
+2026-10-08T08:19:29.552Z [User filters the Chat History by date range] START
+2026-10-08T08:19:29.577Z [User filters the Chat History by date range] closing modal
+2026-10-08T08:19:29.578Z [User selects multiple chats in the Chat History] START
+2026-10-08T08:19:29.674Z [User selects multiple chats in the Chat History] opening panel
+2026-10-08T08:19:30.027Z [User deletes a chat using the multi-select mode] START
+2026-10-08T08:19:30.109Z [User deletes a chat using the multi-select mode] opening panel
+2026-10-08T08:19:30.189Z [User filters the Chat History by date range] opening panel
+2026-10-08T08:19:31.243Z [User filters the Chat History by date range] panel open, deleting test chats
+2026-10-08T08:19:31.261Z [User selects multiple chats in the Chat History] panel open, deleting test chats
+2026-10-08T08:19:31.498Z [User selects multiple chats in the Chat History] ERROR: Error: page.evaluate: SyntaxError: Failed to execute 'json' on 'Response': Unexpected end of JSON input
+2026-10-08T08:19:31.538Z [User filters the Chat History by date range] ERROR: Error: page.evaluate: SyntaxError: Unexpected end of JSON input
+2026-10-08T08:19:32.054Z [User deletes a chat using the multi-select mode] panel open, deleting test chats
+2026-10-08T08:19:32.358Z [User deletes a chat using the multi-select mode] ERROR: Error: page.evaluate: SyntaxError: Failed to execute 'json' on 'Response': Unexpected end of JSON input
+2026-10-08T08:27:28.596Z [User filters the Chat History by date range] START
+2026-10-08T08:27:28.629Z [User filters the Chat History by date range] closing modal
+2026-10-08T08:27:29.250Z [User filters the Chat History by date range] opening panel
+2026-10-08T08:27:29.517Z [User filters the Chat History by date range] panel open, deleting test chats
+2026-10-08T08:27:30.220Z [User filters the Chat History by date range] ERROR: Error: page.evaluate: SyntaxError: Unexpected end of JSON input
+2026-10-08T08:27:31.256Z [User selects multiple chats in the Chat History] START
+2026-10-08T08:27:31.292Z [User selects multiple chats in the Chat History] opening panel
+2026-10-08T08:27:32.886Z [User selects multiple chats in the Chat History] panel open, deleting test chats
+2026-10-08T08:27:33.413Z [User selects multiple chats in the Chat History] ERROR: Error: page.evaluate: SyntaxError: Failed to execute 'json' on 'Response': Unexpected end of JSON input
+2026-10-08T08:27:34.541Z [User deletes a chat using the multi-select mode] START
+2026-10-08T08:27:34.588Z [User deletes a chat using the multi-select mode] opening panel
+2026-10-08T08:27:36.558Z [User deletes a chat using the multi-select mode] panel open, deleting test chats
+2026-10-08T08:27:36.788Z [User deletes a chat using the multi-select mode] ERROR: Error: page.evaluate: SyntaxError: Failed to execute 'json' on 'Response': Unexpected end of JSON input
+2026-10-08T08:31:20.165Z [User deletes a chat using the multi-select mode] START
+2026-10-08T08:31:20.214Z [User deletes a chat using the multi-select mode] opening panel
+2026-10-08T08:31:22.103Z [User deletes a chat using the multi-select mode] panel open, deleting test chats
+2026-10-08T08:31:22.524Z [User deletes a chat using the multi-select mode] ERROR: Error: page.evaluate: SyntaxError: Failed to execute 'json' on 'Response': Unexpected end of JSON input
+2026-10-08T08:31:24.622Z [User selects multiple chats in the Chat History] START
+2026-10-08T08:31:24.650Z [User selects multiple chats in the Chat History] opening panel
+2026-10-08T08:31:26.212Z [User selects multiple chats in the Chat History] panel open, deleting test chats
+2026-10-08T08:31:26.466Z [User selects multiple chats in the Chat History] ERROR: Error: page.evaluate: SyntaxError: Failed to execute 'json' on 'Response': Unexpected end of JSON input
+2026-10-08T08:31:26.712Z [User filters the Chat History by date range] START
+2026-10-08T08:31:26.748Z [User filters the Chat History by date range] closing modal
+2026-10-08T08:31:27.310Z [User filters the Chat History by date range] opening panel
+2026-10-08T08:31:28.839Z [User filters the Chat History by date range] panel open, deleting test chats
+2026-10-08T08:31:29.276Z [User filters the Chat History by date range] ERROR: Error: page.evaluate: SyntaxError: Unexpected end of JSON input

@@ -1,0 +1,12 @@
+{
+  "type": "commonjs",
+  "scripts": {
+    "test": "npx bddgen && npx playwright test",
+    "report": "npx http-server ./cucumber-report -c-1 -a localhost -o report.html"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.6.2",
+    "playwright-bdd": "^9.2.1"
+  }
+}
