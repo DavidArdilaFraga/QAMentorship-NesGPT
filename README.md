@@ -16,3 +16,57 @@ npm test
 ```
 
 En Xray, importa `cucumber-report/xray-results.json` desde la opcion de importar resultados Cucumber JSON. Cada escenario debe incluir su clave de test Xray como tag, por ejemplo `@NESGPTAI-5947`.
+
+## Prompt Library
+
+La cobertura de `features/promptLibrary.feature` utiliza el page object
+`pages/promptLibraryPage.ts` y los steps de `steps/promptLibrarySteps.ts`.
+Incluye navegacion, categorias (crear, renombrar, cancelar y eliminar),
+prompts (crear, editar, cancelar y eliminar), pin/unpin, ordenacion por titulo
+y carga del contenido de un prompt en un chat nuevo sin enviar el mensaje.
+La eliminacion de una categoria tambien verifica que sus prompts se muevan a General.
+
+Ejecuta solo estos escenarios con:
+
+```bash
+npm test -- --grep "@prompt-library"
+```
+
+En Windows PowerShell, utiliza `npm.cmd` si la politica de ejecucion bloquea `npm.ps1`.
+Los escenarios reutilizan la autenticacion existente mediante `@auth`, la vista
+desktop de la configuracion de Playwright y los reportes/evidencias existentes.
+Si la sesion guardada ha caducado, ejecuta primero el escenario de login:
+
+```bash
+npm test -- --grep "User log in NesGPT$" --workers=1
+```
+
+Cada escenario genera nombres unicos y elimina solo sus propios prompts y
+categorias. Los errores de limpieza hacen fallar el test en lugar de ocultarse.
+La feature utiliza `@mode:default` para ejecutar sus escenarios de forma
+secuencial e independiente, aunque la configuracion global tenga `fullyParallel`.
+Todos utilizan la misma cuenta: las modificaciones simultaneas de su biblioteca
+pueden hacer que un prompt guardado no aparezca en las respuestas posteriores.
+Las demas features mantienen su ejecucion en paralelo; no ejecutes varias
+instancias de esta feature a la vez con la misma cuenta.
+El page object espera una respuesta correcta al guardar un prompt y permite
+hasta 30 segundos para que las actualizaciones asincronas aparezcan en la UI.
+Los escenarios nuevos no incluyen claves Xray inventadas; anade los tags de los
+tests correspondientes cuando esten disponibles.
+
+## Discover NesGPT
+
+La cobertura de `features/discoverNesGPT.feature` utiliza el page object
+`pages/discoverNesGPTPage.ts` y los steps de `steps/discoverNesGPTSteps.ts`.
+Los 10 escenarios acceden desde el menu de la homepage y verifican la cabecera,
+la navegacion, la introduccion y los nueve temas de About y Help.
+Cada tema comprueba su URL, breadcrumb, contenido, visibilidad de los titulos
+y enlaces. Los enlaces externos no se abren; se verifica que sean visibles y
+tengan una URL valida.
+
+```bash
+npm test -- --grep "@discover-nesgpt"
+```
+
+Son tests de solo lectura, reutilizan `@auth` y pueden ejecutarse en paralelo.
+Las claves Xray se deben anadir cuando esten disponibles.
