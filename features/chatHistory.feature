@@ -1,4 +1,4 @@
-@Regression
+@Regression @chat-history
 Feature: Chat History
 
   As a NesGPT user

@@ -8,8 +8,6 @@ export type PromptTitleOrder = 'Title: A -> Z' | 'Title: Z -> A';
 export class PromptLibraryPage extends BasePage {
   static readonly UPDATE_TIMEOUT = 30000;
 
-  private walkthroughHandlerRegistered = false;
-
   readonly heading: Locator;
   readonly categoryContent: Locator;
   readonly breadcrumb: Locator;
@@ -55,13 +53,7 @@ export class PromptLibraryPage extends BasePage {
   }
 
   async expectLoaded(): Promise<void> {
-    if (!this.walkthroughHandlerRegistered) {
-      await this.page.addLocatorHandler(
-        this.page.locator('[id^="walkme-balloon"]').first(),
-        async () => this.dismissWalkthroughIfPresent(),
-      );
-      this.walkthroughHandlerRegistered = true;
-    }
+    await this.registerWalkthroughHandler();
     await expect(this.page).toHaveURL(/\/prompt-library(?:\/|$)/);
     await this.expectVisible(this.heading, 30000);
     await this.expectVisible(this.categoryContent, 30000);

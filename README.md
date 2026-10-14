@@ -70,3 +70,26 @@ npm test -- --grep "@discover-nesgpt"
 
 Son tests de solo lectura, reutilizan `@auth` y pueden ejecutarse en paralelo.
 Las claves Xray se deben anadir cuando esten disponibles.
+
+## Helpers y limpieza
+
+Los page objects comparten un unico handler de WalkMe por pagina. Los tours se
+cierran cuando aparecen, sin esperas fijas de 2 segundos en la homepage ni de
+1,5 segundos al abrir Chat History. Las acciones y comprobaciones utilizan el
+auto-wait de Playwright con timeouts acotados.
+
+Los steps de Chat History mantienen datos independientes por escenario y nombres
+unicos de menos de 32 caracteres. La limpieza se ejecuta en los siete escenarios
+mediante `@chat-history`, busca chats pinned y unpinned con paginacion y elimina
+solo los titulos exactos creados por ese escenario. Utiliza la autenticacion de
+las peticiones de la aplicacion, sin guardar tokens en archivos ni escribir en
+`cleanup-debug.log`. Los errores de HTTP o de formato hacen fallar la limpieza
+de forma explicita, en lugar de dejar datos sin notificar.
+
+```bash
+npm test -- --grep "@chat-history"
+```
+
+La autenticacion existente, los tags Xray, los reportes y la ejecucion secuencial
+de Prompt Library se mantienen. `npm test` utiliza los ejecutables locales de
+las dependencias instaladas, sin invocar `npx` en cada ejecucion.

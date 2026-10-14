@@ -19,8 +19,6 @@ export type DiscoverNesGPTTopic = typeof DISCOVER_NESGPT_TOPICS[number];
 export class DiscoverNesGPTPage extends BasePage {
   static readonly CONTENT_TIMEOUT = 30000;
 
-  private walkthroughHandlerRegistered = false;
-
   private static readonly TOPIC_CONTENT: Record<
     DiscoverNesGPTTopic,
     { section: 'About' | 'Help'; slug: string; marker: string | RegExp }
@@ -99,8 +97,11 @@ export class DiscoverNesGPTPage extends BasePage {
   }
 
   async expectLandingPageVisible(): Promise<void> {
-    await expect(this.page).toHaveURL(HomePage.DISCOVER_NESGPT_URL);
     await this.expectLoaded();
+    await expect(this.page).toHaveURL(url =>
+      url.origin === new URL(HomePage.URL).origin &&
+      (url.pathname === '/help-center' || url.pathname === '/help-center/about/what_is_nesgpt'),
+    );
     await expect(this.description).toHaveText(
       /Everything you need to know about .*conversational AI solution/,
     );
@@ -132,13 +133,6 @@ export class DiscoverNesGPTPage extends BasePage {
   }
 
   async openTopic(topic: DiscoverNesGPTTopic): Promise<void> {
-    if (!this.walkthroughHandlerRegistered) {
-      await this.page.addLocatorHandler(
-        this.page.locator('[id^="walkme-balloon"]').first(),
-        async () => this.dismissWalkthroughIfPresent(),
-      );
-      this.walkthroughHandlerRegistered = true;
-    }
     await this.expectLoaded();
     await this.click(this.page.getByRole('button', { name: topic, exact: true }));
   }
