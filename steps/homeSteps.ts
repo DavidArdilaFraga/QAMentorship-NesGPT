@@ -1,16 +1,14 @@
 import { HomePage } from '../pages/homePage';
 import { Given, When, Then } from './fixtures';
 
-let homePage: HomePage;
-
 Given('I am on the NesGPT homepage', async function () {
-  homePage = new HomePage(this.page);
+  const homePage = new HomePage(this.page);
   await homePage.open();
   await homePage.expectNewChatVisible();
 });
 
 When('I open the {string} menu option', async function (menuOption: string) {
-  homePage = new HomePage(this.page);
+  const homePage = new HomePage(this.page);
 
   switch (menuOption) {
     case 'Prompt Library':
@@ -31,7 +29,7 @@ When('I open the {string} menu option', async function (menuOption: string) {
 });
 
 Then('the {string} page is loaded correctly', async function (menuOption: string) {
-  homePage = new HomePage(this.page);
+  const homePage = new HomePage(this.page);
 
   switch (menuOption) {
     case 'Prompt Library':

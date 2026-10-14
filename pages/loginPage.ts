@@ -58,10 +58,7 @@ export class LoginPage extends BasePage {
    * into the center of the view first makes the click reliable.
    */
   private async clickScrolled(locator: Locator, timeout: number): Promise<void> {
-    await locator.waitFor({ state: 'visible', timeout });
-    await locator
-      .scrollIntoViewIfNeeded({ timeout })
-      .catch(() => undefined);
-    await locator.click({ timeout });
+    await locator.scrollIntoViewIfNeeded({ timeout });
+    await this.click(locator, timeout);
   }
 }

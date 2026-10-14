@@ -4,7 +4,7 @@ import { BasePage } from './basePage';
 export class HomePage extends BasePage {
   static readonly URL = 'https://nesgpt-np.genai.nestle.com/';
   static readonly PROMPT_LIBRARY_URL = `${HomePage.URL}prompt-library`;
-  static readonly DISCOVER_NESGPT_URL = `${HomePage.URL}help-center/about/what_is_nesgpt`;
+  static readonly DISCOVER_NESGPT_URL = `${HomePage.URL}help-center`;
 
   readonly newChatButton: Locator;
   readonly promptLibraryButton: Locator;
@@ -51,9 +51,6 @@ export class HomePage extends BasePage {
 
   async open(): Promise<void> {
     await this.goto(HomePage.URL);
-    // WalkMe tour balloons trigger asynchronously on page load and can
-    // cover UI elements (e.g. the sidebar buttons), so dismiss them early
-    await this.dismissWalkthroughIfPresent(2000);
   }
 
   async expectNewChatVisible(): Promise<void> {
@@ -87,22 +84,7 @@ export class HomePage extends BasePage {
   }
 
   async startNewChat(): Promise<void> {
-    // The "New chat" button stays disabled while the backend is still busy
-    // (e.g. generating the reply of a previous conversation): wait for it
-    // to become enabled instead of failing the click.
-    await this.newChatButton.waitFor({ state: 'visible', timeout: 30000 });
-    await this.newChatButton
-      .waitFor({ state: 'attached' })
-      .then(async () => {
-        // Poll until enabled, bounded to 60s
-        const deadline = Date.now() + 60000;
-        while (Date.now() < deadline) {
-          if (await this.newChatButton.isEnabled()) {
-            break;
-          }
-          await this.page.waitForTimeout(1000);
-        }
-      });
+    await expect(this.newChatButton).toBeEnabled({ timeout: 60000 });
     await this.click(this.newChatButton);
   }
 
